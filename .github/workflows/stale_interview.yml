@@ -7,11 +7,11 @@ on:
 
 jobs:
   stale:
+    permissions:
+    issues: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v5
-        permissions:
-          issues: write
         with:
           stale-issue-message: 'The issue of this Candidate hasn't been updated for too long.'
           days-before-stale: 1
