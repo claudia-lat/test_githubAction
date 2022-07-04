@@ -14,4 +14,4 @@ jobs:
           issues: write
         with:
           stale-issue-message: 'The issue of this Candidate hasn't been updated for too long.'
-          days-before-stale: 60
+          days-before-stale: 1
