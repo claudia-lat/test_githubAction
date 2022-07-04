@@ -8,10 +8,10 @@ on:
 jobs:
   stale:
     permissions:
-    issues: write
+      issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v5
-        with:
-          stale-issue-message: 'The issue of this Candidate hasn't been updated for too long.'
-          days-before-stale: 1
+    - uses: actions/stale@v5
+      with:
+        stale-issue-message: 'The issue of this Candidate has not been updated for too long.'
+        days-before-stale: 1
